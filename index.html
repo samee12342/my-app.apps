@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STO Miner</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+   
+    <div class="main-content">
+        <div id="home-page" class="page">
+            <h1><span id="balance">0</span> STO</h1>
+            <p></p>
+            <div class="coin-container">
+                <img id="coin" src="assets/coin.png" alt="Mine Token" class="coin-image">
+            </div>
+            <div class="status-container">
+                <div id="timer" style="display: none;">
+                    <p></p>
+                    <p id="timer-display">24:00:00</p>
+                </div>
+                <div class="progress-bar">
+                    <span id="progress">0/500</span>
+                    <div id="progress-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="referral-page" class="page" style="display: none;">
+            <h1>INVITE FRIENDS</h1>
+            <p>Total Invited Users: <span id="total-invited-users">0</span></p>
+            <p>Share this referral link to invite friends:</p>
+            <input type="text" id="referral-link" value="https://t.me/ShitoClickerBot" readonly>
+            <button id="copy-button">Copy Link</button>
+        </div>
+        <div id="info-page" class="page" style="display: none;">
+            <h1>TASK FOR YOU</h1>
+           
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://logospng.org/download/telegram/logo-telegram-4096.png" alt="Logo">
+                </div>
+                <div class="card-heading">TELEGRAM</div>
+                <a href="https://t.me/+b0DUS1hnB8diNzJk" class="start-button" target="_blank">Start</a>
+            </div>
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://logospng.org/download/telegram/logo-telegram-4096.png" alt="Logo">
+                </div>
+                <div class="card-heading">TELEGRAM</div>
+                <a href="https://t.me/shitobot1" class="start-button" target="_blank">Start</a>
+            </div>
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                </div>
+                <div class="card-heading">Available</div>
+                <a href="https://www.instagram.com/shito_clicker?igsh=aDI3OGhiYThuOHRi" class="start-button" target="_blank">Start</a>
+            </div>
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                </div>
+                <div class="card-heading">Available</div>
+                <a href="https://www.example.com" class="start-button" target="_blank">Start</a>
+            </div>
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+                </div>
+                <div class="card-heading">Available</div>
+                <a href="https://www.example.com" class="start-button" target="_blank">Start</a>
+            </div>
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://th.bing.com/th/id/OIP.eBo4UfoCOevLR1Rc8e7tcgHaHa?rs=1&pid=ImgDetMain" alt="X Logo">
+                </div>
+                <div class="card-heading">Available</div>
+                <a href="https://www.example.com" class="start-button" target="_blank">Start</a>
+            </div>
+            <div class="card">
+                <div class="logo-container">
+                    <img src="https://th.bing.com/th/id/OIP.I47GnsBd0x4QdExqrS82XgAAAA?rs=1&pid=ImgDetMain" alt="Threads Logo">
+                </div>
+                <div class="card-heading">Available</div>
+                <a href="https://www.example.com" class="start-button" target="_blank">Start</a>
+            </div>
+            <!-- Space for extra storage -->
+            <div class="extra-storage"></div>
+        </div>
+        
+        
+
+    <!-- Footer with navigation buttons -->
+    <div class="footer">
+        <button id="referral-button" class="footer-button"><img src="assets/referral.png" alt="Referral"></button>
+        <button id="home-button" class="footer-button"><img src="assets/home.png" alt="Home"></button>
+        <button id="info-button" class="footer-button"><img src="assets/info.png" alt="Info"></button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

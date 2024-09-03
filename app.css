@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://media.licdn.com/dms/image/v2/D4E22AQFz5wL1TdXAkg/feedshare-shrink_800/feedshare-shrink_800/0/1725223058706?e=1727913600&v=beta&t=DTTbdspeBBO0UehZoq6M9A3F4k3LV4kUlwJpY34ITKs');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #EBEF26; /* Ensure text is visible against the background */
+}
+
+.main-content {
+    text-align: center;
+    background-color: transparent;
+    padding: 0; /* Remove padding to eliminate extra space */
+    margin-top: 0; /* Remove top margin to eliminate extra space */
+}
+
+.coin-container {
+    margin: 20px auto; /* Center the coin horizontally */
+    position: relative;
+    text-align: center; /* Center content inside the container */
+}
+
+.coin-image {
+    width: 300px;  /* Width of the coin */
+    height: 300px; /* Height of the coin */
+    background-color: transparent; /* Transparent background for coin */
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: transparent; /* Transparent color for progress bar background */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    background-color: white; /* Fill color for progress */
+    width: 0%;
+    transition: width 0.5s;
+}
+
+/* Footer styling */
+.footer {
+    position: fixed;
+    bottom: 20px; /* Space from the bottom of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust positioning to center */
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Maximum width for the footer */
+    height: 70px; /* Height of the footer */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center;
+    background: #ffffff; /* Set background color to white */
+    border-radius: 30px; /* Rounded corners with 30px radius */
+    border: 5px solid transparent; /* Border to apply gradient */
+    border-image: linear-gradient(45deg, #0097b2, #0300ff); /* Gradient colors */
+    border-image-slice: 1; /* Ensure gradient fills the border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+    padding: 10px; /* Padding around the footer content */
+}
+
+/* Container for buttons */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    padding: 10px; /* Adjust padding to fit the new footer size */
+    background-color: transparent; /* Background color for the button area */
+}
+
+/* Style for each button in the footer */
+.footer-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px; /* Reduced space between buttons */
+    padding: 5px; /* Reduced padding for smaller footer */
+    transition: transform 0.2s, opacity 0.2s; /* Smooth transition for hover effects */
+}
+
+/* Button images */
+.footer-button img {
+    width: 90px; /* Adjusted size for smaller footer icons */
+    height: 90px;
+}
+
+/* Hover effect for buttons */
+.footer-button:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Coin rotation */
+#coin {
+    transition: transform 0.1s linear;
+}
+
+@keyframes rotateClockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAnticlockwise {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Referral Page Styles */
+#referral-link {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#copy-button {
+    padding: 10px 20px;
+    background-color: #373737;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Center the card in the info-page */
+#info-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust based on your layout */
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Adjust width if needed */
+    max-width: 400px; /* Adjust based on your preference */
+    margin-bottom: 10px; /* Space between cards */
+}
+
+.logo-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1;
+}
+
+.start-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
